@@ -27,7 +27,7 @@ def not_ac():
 
 pencere = tk.Tk()
 pencere.title("Not Defteri")
-pencere.geometry("600x400")
+pencere.geometry("500x300")
 
 menu_bar = tk.Menu(pencere)
 pencere.config(menu=menu_bar)
@@ -39,7 +39,6 @@ dosya_menu.add_command(label="Kaydet", command=not_kaydet)
 dosya_menu.add_separator()
 dosya_menu.add_command(label="Çıkış", command=pencere.quit)
 
-# Metin alanı
 text_area = tk.Text(pencere, wrap="word", font=("Arial", 12))
 text_area.pack(expand=True, fill="both")
 
