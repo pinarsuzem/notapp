@@ -24,16 +24,14 @@ def not_ac():
         except Exception as e:
             messagebox.showerror("Hata", f"Dosya açılamadı: {e}")
 
-# Ana pencere
+
 pencere = tk.Tk()
 pencere.title("Not Defteri")
 pencere.geometry("600x400")
 
-
 menu_bar = tk.Menu(pencere)
 pencere.config(menu=menu_bar)
 
-# Dosya menüsü
 dosya_menu = tk.Menu(menu_bar, tearoff=0)
 menu_bar.add_cascade(label="Dosya", menu=dosya_menu)
 dosya_menu.add_command(label="Aç", command=not_ac)
