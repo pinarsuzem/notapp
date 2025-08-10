@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-
 def not_kaydet():
     dosya_yolu = filedialog.asksaveasfilename(defaultextension=".txt",
                                               filetypes=[("Metin Dosyası", "*.txt")])
@@ -41,5 +40,6 @@ dosya_menu.add_command(label="Çıkış", command=pencere.quit)
 
 text_area = tk.Text(pencere, wrap="word", font=("Arial", 12))
 text_area.pack(expand=True, fill="both")
+
 
 pencere.mainloop()
